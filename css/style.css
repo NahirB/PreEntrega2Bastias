@@ -336,9 +336,18 @@ footer .contenedor {
         width: 100%;
         margin: 0;
         position: absolute; 
-        font-size: auto;
+        font: size 20px;;
         display: flex;
+}
+    @media (min-width:300px){
+        .gallery-container .gallery__img {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .gallery__title{
+            font-size: x-small;
+        }
     }
+
     @media (min-width:500px){
         .gallery-container {
             grid-template-columns: repeat(2, 1fr);
